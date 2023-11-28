@@ -21,7 +21,9 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on:
-      labels: arc-runner-set
+      labels: arc-runner-set      
+      group: default
+      
     steps:
     - name: Checkout source code 
       uses: actions/checkout@v3
