@@ -9,8 +9,9 @@ on:
     paths: 
       - 'sampleapp/**' 
 permissions:
-      id-token: write
-      contents: read
+  id-token: write # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+  actions: read
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-deploy:
