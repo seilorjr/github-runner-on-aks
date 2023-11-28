@@ -35,7 +35,7 @@ resource akscluster 'Microsoft.ContainerService/managedClusters@2022-05-02-previ
         name: 'simulator'
         osDiskSizeGB: 30
         count: 1
-        vmSize: 'Standard_F4s_v2'
+        vmSize: 'Standard_DS2_v2'
         osType: 'Linux'
         mode: 'User'
         nodeLabels:{
